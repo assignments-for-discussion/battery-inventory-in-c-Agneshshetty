@@ -20,6 +20,22 @@ void testBucketingByNumberOfCycles() {
   assert(counts.lowCount == 2);
   assert(counts.mediumCount == 3);
   assert(counts.highCount == 1);
+  for(int i=0;i<numberOfBatteries;i++)
+  {
+    if(chargeCycleCounts[i]<310)
+    {
+      lowCount=lowCount+1;
+    }
+    else if(chargeCycleCounts[i]>=310 && chargeCycleCounts[i]>=310)
+    {
+      mediumCount=mediumCount+1;
+    }
+    else
+    {
+      highCount=highCount+1;
+    }
+  }
+  
   printf("Done counting :)\n");
 }
 
