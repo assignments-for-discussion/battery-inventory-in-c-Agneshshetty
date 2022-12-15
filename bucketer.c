@@ -26,7 +26,7 @@ void testBucketingByNumberOfCycles() {
     {
       lowCount=lowCount+1;
     }
-    else if(chargeCycleCounts[i]>=310 && chargeCycleCounts[i]>=310)
+    else if(chargeCycleCounts[i]>=310 && chargeCycleCounts[i]<=929)
     {
       mediumCount=mediumCount+1;
     }
@@ -35,7 +35,9 @@ void testBucketingByNumberOfCycles() {
       highCount=highCount+1;
     }
   }
-  
+  printf("No of Bulbs with low count: %d \n",lowCount);
+  printf("No of Bulbs with low count: %d \n",mediumCount);
+  printf("No of Bulbs with low count: %d \n",highCount);
   printf("Done counting :)\n");
 }
 
